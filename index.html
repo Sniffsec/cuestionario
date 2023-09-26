@@ -3,19 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario</title>
+    <title>Titulaciones de Offsec</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="form_register">
-        <h4>Nombre y apellido</h4>
-        <input class="inputs" type="text" id="">
-        <h4>Dirección</h4>
-        <input class="inputs" type="text" id="">
-        <h4>E-mail</h4>
-        <input class="inputs" type="text" id="">
-        <h4>Teléfono</h4>
-        <input class="inputs" type="text" id="">
-    </section>
+    <video id="video-fondo" autoplay muted loop>
+        <source src="vid/OffSec _ The Path to a Secure Future (1080p).mp4" type="video/mp4">
+    </video>
+    <div style="overflow:scroll hidden; width: auto; height:auto;">
+        <section class="section_datos">
+            <h2 class="titulo">Datos personales</h2>
+            <form class="form_datos">
+                <div class="bloques">
+                    <label class="informacion" for="texto">Nombre y apellido</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">Dirección</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">E-mail</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">Teléfono</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+            </form>
+        </section>
+        <section class="section_examen">
+            <h2 class="titulo">Datos del examen</h2>
+            <form class="form_examen">
+                <div class="bloques">
+                    <label class="informacion" for="texto">Titulo a obtener</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques"></div>
+                    <label class="informacion" for="texto">Examen</label>
+                    <div class="boton">
+                        <label class="informacion_botones" for="texto">OSCP</label>
+                    </div>
+                    <div class="boton">
+                        <label class="informacion_botones" for="texto">OSWP</label>
+                    </div>
+                    <div class="boton">
+                        <label class="informacion_botones" for="texto">OSEP</label>
+                    </div>
+            </form>
+        </section>
+        <section class="section_mas_datos">
+            <h2 class="titulo">Más datos</h2>
+            <form class="form_mas_datos">
+                <div class="bloques">
+                    <label class="informacion" for="texto">Adjunte un archivo de identificación</label>
+                    <button class="boton_adjuntar">Adjuntar aqui</button>
+                    <div class="bloques">
+                        <label class="informacion" for="texto">Obserbaciones</label>
+                        <textarea class="input_obserbaciones" name="descripcion" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
