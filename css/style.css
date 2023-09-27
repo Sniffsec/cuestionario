@@ -1,3 +1,5 @@
+/*Comun para todos los bloques*/
+
 * {
     padding: 0;
 }
@@ -18,7 +20,32 @@
     margin-left: 80px;
 }
 
-.section_datos {
+.bloques {
+    padding-top: 20px;
+}
+
+.informacion {
+    padding: 35px;
+}
+
+.inputs {
+    background-color: rgb(227, 247, 255);
+    padding: 0px 10px 0px 10px;
+    width: 275px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 25px;
+    border: solid thin rgb(227, 247, 255);
+	border-radius: 1em
+}
+
+.degradado {
+    background:linear-gradient(90deg, rgb(65, 129, 225), rgb(0, 68, 255));
+}
+
+/*Bloque de datos personales*/
+
+#section_datos {
     border-top-right-radius: 4em;
     border-top-left-radius: 1em;
     padding-top: 10px;
@@ -26,46 +53,11 @@
     padding-right: 5px;
     width: 450px;
     height: 420px;
-    background-color: rgb(73, 128, 230);
     margin: auto;
     border-radius: 4;
     border-top: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-}
-
-.section_examen {
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 450px;
-    height: 280px;
-    background-color: rgb(73, 128, 230);
-    margin: auto;
-    border-radius: 4;
-    border-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.section_mas_datos {
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 5em;
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 450px;
-    height: 350px;
-    background-color: rgb(73, 128, 230);
-    margin: auto;
-    border-radius: 4;
-    border-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.bloques {
-    padding-top: 20px;
 }
 
 .form_datos {
@@ -77,6 +69,21 @@
     background-color: rgb(120, 178, 253);
 }
 
+/*Bloque de datos del examen*/
+
+#section_examen {
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 450px;
+    height: 280px;
+    margin: auto;
+    border-radius: 4;
+    border-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
 .form_examen {
     border-radius: 2em;
     margin-left: auto;
@@ -84,31 +91,6 @@
     width: 350px;
     height: 190px;
     background-color: rgb(120, 178, 253);
-}
-
-.form_mas_datos {
-    border-radius: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 235px;
-    background-color: rgb(120, 178, 253);
-}
-
-.informacion {
-    padding: 35px;
-}
-
-
-.inputs {
-    background-color: rgb(227, 247, 255);
-    padding: 0px 10px 0px 10px;
-    width: 275px;
-    height: 30px;
-    margin-top: 3px;
-    margin-left: 25px;
-    border: solid thin rgb(227, 247, 255);
-	border-radius: 1em
 }
 
 .informacion_botones {
@@ -125,6 +107,36 @@
     border: 2px solid #000;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.boton:active {
+    background-color: #000;
+}
+
+/*Bloque de más datos*/
+
+#section_mas_datos {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 5em;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 450px;
+    height: 350px;
+    margin: auto;
+    border-radius: 4;
+    border-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.form_mas_datos {
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 235px;
+    background-color: rgb(120, 178, 253);
 }
 
 .boton_adjuntar {
@@ -151,6 +163,3 @@
     resize: none;
 }
 
-.boton:active {
-    background-color: #000;
-}
