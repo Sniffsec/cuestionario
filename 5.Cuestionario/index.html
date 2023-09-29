@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulaciones de Offsec</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Video de fondo-->
+    <video id="video-fondo" autoplay muted loop>
+        <source src="vid/OffSec _ The Path to a Secure Future (1080p).mp4" type="video/mp4">
+    </video>
+
+    <!--Div de todo el bloque-->
+    <div style="overflow:scroll hidden;" id="bloque_principal" class="degradado">
+        
+        <!--Bloque de datos personales-->
+        <section id="section_datos">
+            <h2 class="titulo">Información personal</h2>    <!--Titulo-->
+            <form class="form_datos">
+                <div class="bloques">
+                    <label class="informacion" for="texto">Nombre y apellido</label>    <!--Todos los inputs del bloque-->
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">Dirección</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">E-mail</label>
+                    <input class="inputs" type="email" id="">
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">Teléfono</label>
+                    <input class="inputs" type="text" id="">
+                </div>
+            </form>
+        </section>
+
+        <!--Bloque de datos del examen-->
+        <section id="section_examen">
+            <h2 class="titulo">Titulación</h2>    <!--Titulo-->
+            <form class="form_examen">
+                <div class="bloques">
+                    <label class="informacion" for="exam">Titulo a obtener</label>
+                    <select name="Examenes" id="menu_desplegable">
+                        <option value="Seleccionar">Seleccionar un examen</option>
+                        <option value="OSCP">OSCP (Penetration testin)</option>
+                        <option value="OSWP">OSWP (Penetration testin)</option>
+                        <option value="OSEP">OSEP (Penetration testin)</option>
+                        <option value="OSWA">OSWA (Web Application)</option>
+                        <option value="OSWE">OSWE (Web Application)</option>
+                    </select>
+                </div>
+                <div class="bloques">
+                    <label class="informacion" for="texto">¿Que team eres?</label><br>
+                    <input id="primer_boton" type="radio" name="Modo" class="botones">
+                        <span class="informacion_botones">Blue team</span><br>
+                    <input type="radio" name="Modo" class="botones">
+                        <span class="informacion_botones">Purple team</span><br>
+                    <input type="radio" name="Modo" class="botones">
+                        <span class="informacion_botones">Red team</span><br>
+                </div>
+            </form>
+        </section>
+
+        <!--Bloque de más datos-->
+        <section id="section_mas_datos">
+            <h2 class="titulo">Identificación</h2>
+            <form class="form_mas_datos">
+                <div class="bloques">
+                    <label class="informacion" for="texto">Adjunte un archivo identificatorio</label>
+                    <button class="boton_adjuntar">Adjuntar aqui</button>   <!--casilla para adjuntar archivos-->
+                    <div class="bloques">
+                        <label class="informacion" for="texto">Obserbaciones</label>
+                        <textarea class="input_obserbaciones" name="descripcion" rows="4" cols="50"></textarea>     <!--Casilla para escribir las obserbaciones-->
+                    </div>
+                </div>
+            </form>
+        </section>
+            <form class="form_terminos">
+                <div>
+                    <a href="terminos_y_condiciones/index.html">
+                        <input type="submit" id="boton_terminos">Acepto los terminos y condiciones</button>
+                    </a>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
