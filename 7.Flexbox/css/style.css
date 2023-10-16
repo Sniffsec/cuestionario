@@ -1,0 +1,205 @@
+body {
+    background-color: rgb(211, 255, 255);
+    margin: 3rem 6rem 3rem 6rem;
+}
+
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+/* Presentación */
+#presentacion {
+    background-color: rgba(36, 0, 136, 0.8);
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: rgb(214, 214, 214);
+}
+
+#presentacion h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(214, 214, 214);
+}
+
+/* Menu */
+#menu {
+    position: relative;
+    background-color: rgb(23, 0, 66, 0.8);
+    display: flex;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-items:center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.b_menus_inicio {
+    background-color: rgb(23, 0, 66, 0.3);
+    color: rgb(214, 214, 214);
+    flex: 1;
+    border-bottom-left-radius: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+.b_menus {
+    background-color: rgb(23, 0, 66, 0.3);
+    color: rgb(214, 214, 214);
+    flex: 1;
+}
+
+/* desplegable */
+.b_menus:hover, .b_menus_inicio:hover {
+    background-color: rgb(37, 0, 107);
+    border-radius: 0;
+}
+
+.dropdown {
+    top: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.c_dropdown {
+    display: none;
+    position: relative;
+    background-color: #4500b4;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1rem 0 1rem;
+}
+
+.c_dropdown:hover {
+    background-color: #3b0099;
+}
+
+.b_menus_inicio:hover .c_dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+#drop_bordes {
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+/* Buscador */
+.buscador {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#a_buscador {
+    width: 20rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(214, 214, 214);
+}
+
+#b_buscador {
+    border-radius: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(214, 214, 214);
+    margin-left: 0.5rem;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+}
+
+/* ¿Que es flexbox? */
+#q_flexbox {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:row;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#q_texto {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1rem;
+    border-end-start-radius: 1rem;
+    border-right: 0px transparent;
+    text-align: center;
+    background-color: rgb(23, 0, 66, 0.8);
+    color: rgb(214, 214, 214);
+    flex: 1;
+    padding: 2rem;
+}
+
+#q_texto h2 {
+    margin-top: 0;
+}
+
+#q_texto p {
+    text-align: justify;
+}
+
+#q_video {
+    flex: 2;
+}
+
+#q_video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Columnas y slider */
+#slider {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(23, 0, 66, 0.8);
+}
+
+#c_1 {
+    flex: 1;
+}
+
+#c_1 p {
+    text-align: justify;
+}
+
+#c_2 {
+    flex: 2;
+}
+
+#c_2 img {
+    border-radius: 1rem;
+}
+
+#c_3 {
+    flex: 1;
+}
+
+#c_3 img {
+    border-radius: 1rem;
+}
+
+#c_1, #c_2, #c_3 {
+    flex: 1;
+    margin: 2rem;
+    margin-top: 0;
+    color: rgb(214, 214, 214);
+}
